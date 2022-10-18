@@ -17,7 +17,7 @@ plt.show()
 data["Date"] = pd.to_datetime(data["Date"], infer_datetime_format=True)
 data = data[["Date", "Close"]]
 
-#Renaming the columns as we are using the Facebook Profet model for predicting stock prices of tesla
+#Renaming the columns as we are using the Facebook Prophet model for predicting stock prices of tesla
 data = data.rename(columns={"Date" : "ds", "Close" : "y" })
 
 #Now predicting the stock prices of Tesla
